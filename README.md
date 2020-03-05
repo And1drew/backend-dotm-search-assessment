@@ -17,11 +17,15 @@ The law firm makes use of .dotm template files to bill for services.  These tem
 
 By searching the dotm files for a '$' character, you can determine the subset of files that need to be reviewed and updated.  However, the dotm file is not a plain text file that can simply be read into python and examined ... Use your Google search and Stack Overflow skills to find out how dotm files can be decoded in python.  NOTE: Timebox your DOTM format research.  If you have not figured out the DOTM file format in 20 minutes, ask an instructor for a hint.
 
+
+
 ## Your Task
 Write a python program named `dotm_search.py`.  
 Your program should accept two cmdline arguments: First argument is the text to search for. 
 The second argument is an OPTIONAL directory of .dotm files to scan.  If this argument is omitted,
 the default path to search is the current directory.  NOTE that the optional directory `--dir [dotm-path]` actually includes two arguments (the option flag, and its value) but we are counting them as one combined argument key-value pair.
+
+
 ```
 python dotm_search.py --dir ./dotm_files "$" 
 python dotm_search.py "other text"
