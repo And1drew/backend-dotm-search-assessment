@@ -47,3 +47,5 @@ if __name__ == '__main__':
     parser.add_argument("search_location", default="./dotm_files/", help="the location to seach for the key in")
     args = parser.parse_args()
     main(args)
+
+# assinment took a solid 4-5 hours of focused work
